@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+
+
+.containerForm{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    height: 1000px;
+    width: 100%;
+}
+
+
+
+.containerForm .contactForm{
+    margin-top: -110px;
+    width: 60%;
+    
+    border-radius: 3%;
+    background: rgb(255, 255, 255);
+}
+
+
+
+.containerForm .contactForm h2 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.containerForm .contactForm .formBox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.containerForm .contactForm .formBox .inputBox{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.containerForm .contactForm .formBox #w50{
+    width: 47%;
+}
+
+.containerForm .contactForm .formBox #w100{
+    width: 100%;
+}
+
+.containerForm .contactForm .formBox .inputBox input,
+.containerForm .contactForm .formBox .inputBox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border-bottom: 1px solid rgb(45, 45, 45);
+}
+
+.containerForm .contactForm .formBox .inputBox textarea{
+    height: 120px;
+}
+.containerForm .contactForm .formBox .inputBox span{
+
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.containerForm .contactForm .formBox .inputBox input:focus ~ span,
+.containerForm .contactForm .formBox .inputBox input:valid ~ span,
+.containerForm .contactForm .formBox .inputBox textarea:focus ~ span,
+.containerForm .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-25px);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+
+.containerForm .contactForm .formBox .inputBox input[ type="submit"]{ 
+    position: relative;
+    cursor: pointer;
+    background: #541a9c;
+    color: rgb(0, 0, 0);
+    max-width: 150px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+    }
+
+.containerForm .contactForm .formBox .inputBox input[ type="submit"]:hover{
+    background: #ef450a;
+    color: #000000;
+    transform: translateY(-10px);
+}
+
+.whap{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #25d366;
+}
+
+.mail{
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.gmail{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 379px){
+    .containerForm .contactForm{
+    
+    width: 80%;
+
+}
+
+}

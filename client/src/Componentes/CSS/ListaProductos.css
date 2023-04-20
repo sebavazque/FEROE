@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+.lista-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.lista-container{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-content{
+    width:250px;
+    box-sizing: border-box;
+}
+
+.card-content:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-container{
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card-colum1{
+    overflow: hidden;
+}
+
+.img{
+    width: 250px;
+    height: 380px;
+    transition: all 0.5s;
+    object-fit: cover;
+    
+}
+
+.img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.card-colum3 a{
+    text-decoration: none;
+}
+
+
+
+.card-colum2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    
+    align-items: center;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+}
+
+h4{
+    font-weight: 300;
+    color: rgb(86, 86, 86);
+    font-size: 15px;
+}
+
+.btnCom{
+    width: 80%;
+    height: 35px;
+    background-color: black;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btnCom a{
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+.btnCom:hover > a{
+    height: 40px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 669px){
+    .img{
+        width: 230px;
+        height: 340px;
+    }
+    .card-content{
+        width: 230px;
+    }
+
+    .card-container{
+        padding: 5px;
+    }
+
+    .lista-content{
+        gap: 55px;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .img{
+        width: 200px;
+        height: 310px;
+    }
+    .card-content{
+        width: 200px;
+    }
+
+    .card-container{
+        padding: 5px;
+    }
+
+    .lista-content{
+        gap: 33px;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 455px){
+    .img{
+        width: 170px;
+        height: 260px;
+    }
+    .card-content{
+        width: 170px;
+    }
+
+    .card-container{
+        padding: 0px;
+    }
+
+    .lista-content{
+        gap: 15px;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    h2{
+        font-weight: 400;
+        font-size: 15px;
+        color: black;
+    }
+    
+    h3{
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    h4{
+        font-weight: 300;
+        color: rgb(86, 86, 86);
+        font-size: 12px;
+    }
+
+    .btnCom{
+        height: 25px ;
+        font-size: 12px;
+    }
+    .btnCom:hover > a{
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 371px){
+    .img{
+        width: 140px;
+        height: 220px;
+    }
+    .card-content{
+        width: 140px;
+    }
+
+    .card-container{
+        padding: 0px;
+    }
+
+    .lista-content{
+        gap: 15px;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+}

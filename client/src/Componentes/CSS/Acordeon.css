@@ -1,0 +1,109 @@
+
+.Acontain{
+    position: relative;
+    width: 100%;
+    height: 415px;
+    background-size: cover;
+    background-position: center;
+    transition: all .7s ease-in-out; 
+    background-color: #ffffff;
+    letter-spacing: 2px;    
+    text-decoration: none;
+    
+}
+
+.Acotain-content{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+    
+
+.AcordeonContainer{
+    width: 85%;
+    margin-inline: auto;
+   
+}
+
+.title{
+    font-size: clamp(26px, 5vw, 40px);
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+.acordeon-panel{
+    padding: 7px 21px;
+    margin-bottom: 24px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    
+}
+
+.acordeon input{
+    display: none;
+}
+
+.acordeon label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+    padding-block: 7px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
+.acordeon label:hover,
+.acordeon  + label{
+    color: #7EFFB2;
+}
+
+.acordeon i{
+    color: #7EFFB2;
+}
+
+.acordeon .close{
+    display: none;
+}
+
+.acordeon input:checked + label .close{
+    display: block;
+}
+
+.acordeon  + label .open{
+    display: none;
+}
+
+.acordeon-bo{
+    height: 0;
+    overflow: hidden;
+
+}
+
+.acordeon-answer{
+    font-size: 14px;
+    color: #000000;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: opacity 0.75s, transform 0.15s;
+    transition: all .4s ease-in-out; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.acordeon-panel:hover .acordeon-bo{
+    height: max-content;
+}
+
+ .acordeon-panel:hover  .acordeon-bo .acordeon-answer{
+    opacity: 1;
+    transform: scale(1);
+} 
+

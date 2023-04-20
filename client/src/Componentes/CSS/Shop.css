@@ -1,0 +1,47 @@
+.shop{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s ease-in-out; 
+    background-image: url(./FOTOS/Image8.jpg);
+    letter-spacing: 4px;
+    
+}
+
+
+
+.shop-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    align-items: center;    
+    
+}
+a {text-decoration: none;}
+
+.shop-content:hover{
+    background-color: rgba(0, 0, 0, 0.412);
+
+}
+
+.h2-shop{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.shop-content:hover h2{
+    font-size: 35px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+

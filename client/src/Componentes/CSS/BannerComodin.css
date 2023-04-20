@@ -1,0 +1,19 @@
+.bannerComodin{
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s ease-in-out; 
+    background-image: url(./FOTOS/Image1.jpeg);
+}
+
+
+.bannerComodin-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

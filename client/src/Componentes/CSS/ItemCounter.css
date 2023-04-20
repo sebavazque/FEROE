@@ -1,0 +1,25 @@
+.contenedor2{
+    width: 100%;
+}
+
+.btnCart-container{
+    width: 100%;
+}
+
+.canti{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-suma, .btn-resta{
+    padding: 10px;
+    background: transparent;
+    border: 1px solid gray;
+    font-size: 15px;
+    border-radius: 5px;
+    color: black;
+}

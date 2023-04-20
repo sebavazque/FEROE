@@ -1,0 +1,59 @@
+@font-face {
+    font-family:Nosotros;
+    src: url(./Fonts/Montage-Demo.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+
+p {
+    color: #000000ba;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 20px;
+}
+
+.containerAbout{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+.aboutRow{
+     padding: 40px;
+     
+}
+
+.aboutRow img{
+    width: 130px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1095px){
+
+
+    p{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 705px){
+    p{
+        font-size: 25px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+    p{
+        font-size: 20px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 399px){
+
+
+}

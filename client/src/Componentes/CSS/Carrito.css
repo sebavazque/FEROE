@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+
+
+.carrito{
+    
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.cart-content{
+    width: 100%;
+    background-color: rgb(255, 253, 253);
+    overflow: hidden;
+   
+    
+
+    height: 100%;
+    margin: 5px;
+
+    color: rgb(0, 0, 0);
+    
+}
+
+.cart-content img{
+    height: 140px;
+    width: 90px;
+    
+}
+
+.cart{
+    display: block;
+    float: right;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.cart-colum{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.cart-containter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.carrito h2{
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+.btnPagar{
+    
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 250px;
+    margin-top: 20px;
+}
+
+.btnPagar h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.btnPagar a{
+    text-decoration: none;
+
+}
+
+.clean{
+    border-radius: 6px;
+    background-color: rgb(250, 250, 250);
+    font-size: 17px;
+    border: 1px solid #858585;
+    color: #020202;
+    padding: 5px;
+    margin: 5px;}
+
+
+
+table td{
+    text-align: center;
+    
+    padding: 10px;
+    
+    
+}
+
+table tbody{
+    border-bottom: 1px solid #8585852a;
+
+}
+
+table tbody tr td:nth-child(1){
+    display: flex;
+    align-items: flex-start;
+}
+
+table tbody tr td:nth-child(1) h4{
+    padding: 4px;
+    font-size: 20px;
+}
+
+table td:nth-child(1){
+    width: 600px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    
+    
+    table-layout: fixed;
+}
+
+
+table tbody tr{
+    border-top: 1px solid #8585852c;
+  
+}
+
+table tbody tr h5{
+    font-size: 20px;
+}
+
+table thead td h4{
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+}
+
+.btnDelete{
+    color: rgb(255, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.lineCart{
+    border-top: 2px solid rgba(0, 0, 0, 0.185);
+    height: 3px;
+    width: 100%;
+    padding: 0;
+    margin: 10px auto 0 auto;
+}
+
+.checkout{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal h4{
+    font-size: 20px;
+    color: #020202;
+}
+
+
+
+@media only screen and (max-width:561px){
+    .cart-containter{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:859px){
+    table td:nth-child(1){
+        width: 500px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:752px){
+    table td:nth-child(1){
+        width: 400px;
+    }
+
+    .finish{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:644px){
+    table td:nth-child(1){
+        width: 300px;
+    }
+    table tbody tr td:nth-child(1) h4{
+        font-size: 15px;
+    }   
+
+    table tbody tr h5{
+        font-size: 16px;
+    }
+
+    table td:nth-child(1) h4,table td:nth-child(2) h4{
+        font-size: 16px;
+    }
+
+    
+    .carrito h2{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:537px){
+    table td:nth-child(1){
+        width: 270px;
+    }
+
+    table tbody tr td:nth-child(1) h4{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width:503px){
+    table td:nth-child(1){
+        width: 245px;
+    }
+
+    .btnDelete{
+        position: absolute;
+    }
+    
+        
+    table tbody tr td:nth-child(1) h4{
+        font-size: 13px;
+    }   
+
+    table tbody tr h5{
+        font-size: 13px;
+    }
+
+    table td:nth-child(1) h4,table td:nth-child(2) h4,table td:nth-child(3) h4{
+        font-size: 12px;
+    }
+
+    .finish{
+        font-size: 13px;
+    }
+
+    .checkout h4{
+        font-size: 15px;
+    }
+
+
+    
+}
+
+@media only screen and (max-width:474px){
+    table td:nth-child(1){
+        width: 215px;
+
+    }
+
+}
+
+
+@media only screen and (max-width:440px){
+    table td:nth-child(1){
+        width: 215px;
+
+    }
+
+    #td3{
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+.lista-container{
+    width: 100%;
+    background-color: white;
+    font-family:'Montserrat', sans-serif;
+}
+
+.lista-container{
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.lista-content{
+    width: 40%;
+}

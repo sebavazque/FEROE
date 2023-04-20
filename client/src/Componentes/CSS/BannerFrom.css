@@ -1,0 +1,108 @@
+.bannerFrom{
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s ease-in-out; 
+    background-image: url(./FOTOS/Image20.jpeg);
+    
+}
+.bannerFrom2{
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    transition: all .3s ease-in-out; 
+    background-image: url(./FOTOS/Imagen.jpeg);
+    
+}
+
+.bannerFrom-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner-contentFrom:hover{
+    background-color: rgba(0, 0, 0, 0.412);
+
+}
+
+.banner-contentFrom{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    transition: 0.5s;
+    padding: 60px;
+}
+
+.banner-contentFrom .logoFrom{
+    width: 105px ;
+    height: 25px;
+    filter: drop-shadow( 2px 2px 2px rgb(0, 0, 0));
+}
+
+.banner-contentFrom p{
+    color: white;
+    font-size: 20px;
+    filter: drop-shadow( 2px 2px 2px rgb(0, 0, 0));
+    font-weight: 500;
+   
+}
+
+.banner-contentFrom h3{
+    color: white;
+    font-size: 30px;
+    filter: drop-shadow( 2px 2px 2px rgb(0, 0, 0));
+    font-weight: 800;
+}
+
+@media screen and (max-width: 705px){
+    .banner-contentFrom p{
+        color: white;
+        font-size: 15px;
+        filter: drop-shadow( 2px 2px 2px rgb(0, 0, 0));
+        font-weight: 500;
+       
+    }
+
+    .banner-contentFrom h3{
+        color: white;
+        font-size: 20px;
+        filter: drop-shadow( 2px 2px 2px rgb(0, 0, 0));
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 538px){
+    .banner-contentFrom p{
+        color: white;
+        font-size: 12px;
+        filter: drop-shadow( 2px 2px 2px rgb(0, 0, 0));
+        font-weight: 500;  
+    }
+
+    .banner-contentFrom .logoFrom{
+        width: 105px ;
+        height: 20px;
+    }
+
+    .banner-contentFrom h3{
+        color: white;
+        font-size: 15px;
+        filter: drop-shadow( 2px 2px 2px rgb(0, 0, 0));
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 465px){
+    .banner-contentFrom{
+        padding: 25px;
+    }
+}

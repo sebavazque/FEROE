@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+
+
+.Card-allContainer{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+   padding: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-contenido{
+    width: 250px;
+    box-sizing: border-box;
+    margin: 30px;
+    transition: all 0.5s;
+}
+.card-contenido:hover{
+   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-contenedor{
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+.imgC{
+    width: 250px;
+    height: 380px;
+    transition: all 0.5s;
+    object-fit: cover;
+    
+}
+
+.imgC:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.card-colum5 a{
+    text-decoration: none;
+}
+
+.card-colum4{
+    overflow: hidden;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.card-colum6{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+
+h4{
+    font-weight: 300;
+    color: rgb(86, 86, 86);
+    font-size: 15px;
+}
+
+.btnCarru{
+    width: 80%;
+    height: 35px;
+    background-color: black;
+    transition: all 0.6s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btnCarru a{
+    color: white;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.btnCarru:hover > a{
+    height: 40px;
+
+    font-size: 15px;
+}
+
+@media screen and (max-width: 525px){
+    .Card-allContainer{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .imgC{
+        width: 225px;
+        height: 350px;
+    }
+    .card-contenido{
+        width: 225px;
+    }
+}
+.rec.rec-arrow {
+    background-color: transparent;
+    
+}
+
+.rec.rec-arrow:hover{
+    background-color: transparent;
+    
+}
+
+.rec .rec-pagination{
+    visibility: hidden;
+}
+
+.kXteup:hover:enabled, .kXteup:focus:enabled{
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.kXteup{
+    background-color: transparent !important;
+    color: black !important;
+}
+
+
+
+
+/* @media screen and (max-width: 375px){
+    .imgC{
+        width: 215px;
+        height: 335px;
+    }
+    .card-contenido{
+        width: 215px;
+    }
+} */
