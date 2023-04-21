@@ -19,7 +19,11 @@ const All = () => {
       }, [])
     return(
         <div>
-           
+            <Banner/>
+            <CarruselContainer/>
+            <Shop/>
+            <BannerFrom/>
+            <Acordeon/>
             
             <a href='https://wa.me/3413667323'><AiOutlineWhatsApp className='whapFoot'/></a>
         </div>
