@@ -149,15 +149,12 @@ const Form = () => {
                             <h3>${totalPrice}</h3>
                         </div>
                         <div>
-                            
-                            <form action="http://feroeee.onrender.com/payment" method='POST'>
-                                <input type="hidden" name='title' value="FEROE"></input>
-                                <input type="hidden" name='price' value={totalPrice} ></input>
+    
                                 <button type='submit' onClick={handleConfirm} className='btnPagar'><h4>COMPRAAAR</h4></button>
-                            </form>
+
                         
                         </div>
-                        <h3>su orden es {ordenId}</h3>
+                        <h3>Su codigo de orden es : {ordenId} </h3>
 
             </div>        
         </div>
