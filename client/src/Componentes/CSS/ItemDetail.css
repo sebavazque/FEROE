@@ -132,7 +132,7 @@
     z-index: 999;
     transform: scale(0);
     overflow: hidden;
-    margin-top: -396px;
+    margin-top: -350px;
 }
 
 .model.open{

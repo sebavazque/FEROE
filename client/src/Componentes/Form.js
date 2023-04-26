@@ -3,19 +3,20 @@ import BannerComodin from './BannerComodin'
 import './CSS/Checkout.css'
 import { useAppContext } from './CartContext'
 import { useState } from "react";
-import {  Link,useNavigate } from 'react-router-dom';
+import {  Link} from 'react-router-dom';
 import MP from './CSS/FOTOS/MP.png'
 import MP2 from './CSS/FOTOS/MP2.png'
 import { addDoc, collection, serverTimestamp} from "firebase/firestore";
-import { toast } from "react-toastify";
 import { dbFirebase } from "./Firebase";
-import axios from 'axios'
-
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { BiCopyAlt } from "react-icons/bi";
+import { AiOutlineWhatsApp} from "react-icons/ai";
 
 const Form = () => { 
     
     // const [formData, setFormData] = useState({ name: '', email: '', celu: '', city: '', region: '', casa: '', depto:'', codigo:'' })
-    const {cart,totalPrice,cleanCart} = useAppContext() 
+    const {cart,totalPrice} = useAppContext() 
+    const [add , setAdd] = useState(false) 
     const orders = collection(dbFirebase, "Ordenes");
     const [loading, setLoading] = useState(false);
     const [ordenId, setOrdenId] = useState("");  
@@ -61,7 +62,7 @@ const Form = () => {
             .then((data) => {
                 setOrdenId(data.id);
                 // alert('Enviado')
-                // cleanCart([]);
+                setAdd([]);
             })
 
     }
@@ -125,7 +126,7 @@ const Form = () => {
                     {cart.map((item) =>                               
                         <tbody>                                                                           
                             <tr key={item.id} id='trLine' >
-                                <td> <img className='imgCheck' src={item.img}/> <h4>{item.titulo} </h4> <h4>x</h4> <h4>{item.quantity}</h4> </td>
+                                <td> <img className='imgCheck' alt='' src={item.img}/> <h4>{item.titulo} </h4> <h4>x</h4> <h4>{item.quantity}</h4> </td>
                                 <td></td>
                                 <td><h4>${item.precio * item.quantity}</h4></td>
                             </tr>        
@@ -139,22 +140,35 @@ const Form = () => {
             </table>
             <div className='mp-check'>                  
                         <h3>Los pedidos se retiran por Barrio Martin (Rosario) o se pueden coordinar envios por cadeteria a cargo del cliente.</h3> 
-                        <h3>Mercado Pago <img src={MP2}/>  </h3>  
-                        <img className='MP' src={MP}/>
-                        <h3>Al confirmar tu compra, te redirigiremos a tu cuenta de Mercado Pago.</h3>
+                        <h3>Para abonar tu pedido tenés que enviarnos tu código de orden por Whatsapp, por ahí nos indicas la forma de pago y te pasamos un link de pago o el CVU.</h3>
+                        {/* <h3>Mercado Pago <img src={MP2} alt=''/>  </h3>  
+                        <img className='MP' src={MP} alt=''/>
+                        <h3>Al confirmar tu compra, te redirigiremos a tu cuenta de Mercado Pago.</h3> */}
                    </div>   
             <div className='checkout'>
                         <div className='subtotal'>
-                            <h3>Total del pedido:</h3>
-                            <h3>${totalPrice}</h3>
+                            <h2>Total del pedido:</h2>
+                            <h2>${totalPrice}</h2>
                         </div>
                         <div>
-    
+                        {
+                        add ?
+                            <div className='copyDiv'>
+                                <h2>Su codigo de orden es : {ordenId} </h2> 
+                                <CopyToClipboard text={ordenId}>
+                                   <BiCopyAlt className='copyIcon' />
+                                </CopyToClipboard>
+                                 <a href='https://wa.me/3413667323'><AiOutlineWhatsApp className='whapFoot'/></a>
+                            </div>
+                            
+                            :
+                            <div>
                                 <button type='submit' onClick={handleConfirm} className='btnPagar'><h4>COMPRAAAR</h4></button>
+                            </div>
 
-                        
+                        }
                         </div>
-                        <h3>Su codigo de orden es : {ordenId} </h3>
+                        
 
             </div>        
         </div>

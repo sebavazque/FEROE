@@ -22,6 +22,7 @@
 
 .check-container h4{
     color: rgb(0, 0, 0);
+    font-weight: 400;
 }
 
 .check-container span{
@@ -112,6 +113,20 @@
     width: 90px;
     height: 30px;
 }
+
+.copyDiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 18px;
+}
+.copyDiv .copyIcon{
+    font-size: 35px;
+    padding: 5px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width:1461px){
     .checkout-form{

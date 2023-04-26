@@ -9,7 +9,6 @@ import Header from './Header';
 import Nosotros from './Nosotros';
 import Shop from './Shop';
 import CarruselContainer from './CarruselContainer';
-import BannerShop from './BannerShop';
 import { AiOutlineWhatsApp} from "react-icons/ai";
 import BannerFrom from './BannerFrom';
 

@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAppContext } from "./CartContext";
-import { toast } from "react-toastify";
+import { AiOutlineWhatsApp} from "react-icons/ai";
 import ItemCounter from "./ItemCounter";
 import './CSS/ItemDetail.css'
 import BannerShop from './BannerShop';
 import { useEffect } from 'react'
-import TalleS from "./TalleS";
 
 
 const ItemDetail = ({producto}) => {
@@ -15,7 +14,6 @@ const ItemDetail = ({producto}) => {
       }, [])
     
     const [add , setAdd] = useState(false) 
-    const [adde , setAdde] = useState(false) 
     const [selectedSize, setSelectedSize] = useState()
     const {addToCart} = useAppContext()
     const [image, setImage] = useState(false)
@@ -47,7 +45,7 @@ const ItemDetail = ({producto}) => {
     <div>
 
         <BannerShop/>
-
+        <a href='https://wa.me/3413667323'><AiOutlineWhatsApp className='whapFoot'/></a>
 
         <div className="detail-container">
             
@@ -57,11 +55,11 @@ const ItemDetail = ({producto}) => {
                     <div className="item-colum1">
                         <div className={`${openImage}`} >
 
-                            <img onClick={() => handleClick()} className='imgDetail' src={producto.img} />
+                            <img onClick={() => handleClick()} className='imgDetail' src={producto.img} alt="" />
 
                         </div>   
                         <div className={`${openMiniImage}`}>
-                                <img onClick={() => handleClickImg()} className='img2' src={producto.img2}/>
+                                <img onClick={() => handleClickImg()} className='img2' src={producto.img2} alt="" />
                                 
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import { useAppContext } from './CartContext'
 import { Link } from 'react-router-dom';
 import './CSS/Carrito.css'
 import { BiXCircle } from "react-icons/bi";
-import BannerShop from './BannerShop';
+import { AiOutlineWhatsApp } from "react-icons/ai";
 import BannerComodin from './BannerComodin';
 
 
@@ -17,6 +17,7 @@ const Carrito = () => {
 
                 <div className='carrito'>
                     <BannerComodin/>
+                    <a href='https://wa.me/3413667323'><AiOutlineWhatsApp className='whapFoot'/></a>
                     <div className='cart-colum'>
                         <div className='cart-containter'>
                             <h2>TU CARRITO</h2>

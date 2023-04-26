@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import BannerShop from './BannerShop';
 import { FiMail } from "react-icons/fi";
 import { AiOutlineWhatsApp } from "react-icons/ai";
-import { Link } from 'react-router-dom';
 import { useEffect } from 'react'
 
 function Contacto () {
@@ -28,6 +27,8 @@ function Contacto () {
   return (
     <div>
   <BannerShop/> 
+  <a href='https://wa.me/3413667323'><AiOutlineWhatsApp className='whapFoot'/></a>
+
     <div className='containerForm'>
      
       <div className='contactForm'>
@@ -58,7 +59,6 @@ function Contacto () {
             </div>
             
         </div> <FiMail className='gmail'/> <p className='mail'>weareferoe@gmail.com</p>
-           <a href='https://wa.me/3413667323'><AiOutlineWhatsApp className='whap'/> </a>
             
         </form>
       </div>  
