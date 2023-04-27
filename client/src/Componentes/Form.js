@@ -11,6 +11,7 @@ import { dbFirebase } from "./Firebase";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { BiCopyAlt } from "react-icons/bi";
 import { AiOutlineWhatsApp} from "react-icons/ai";
+import axios from "axio"
 
 const Form = () => { 
     
@@ -163,12 +164,7 @@ const Form = () => {
                             
                             :
                             <div>
-                                 <button type='submit' onClick={handleConfirm} className='btnPagar'><h4>COMPRAAAR</h4></button> 
-                                <form action="https://feroe.vercel.app/payment" method='POST'>
-                                    <input type="hidden" name='title' value="FEROE"></input>
-                                    <input type="hidden" name='price' value={totalPrice} ></input>
-                                    <button type='submit' onClick={handleConfirm} className='btnPagar'><h4>COMPRAAAR</h4></button>
-                                </form>
+                                 <button type='submit' onClick={() => {axios.post('https://feroe.vercel.app/payment', totalPrice).then((res)=> window.location.href = res.data.response.body.init_point) }} className='btnPagar'><h4>COMPRAAAR</h4></button> 
                             </div>
 
                         }
