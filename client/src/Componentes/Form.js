@@ -164,7 +164,7 @@ const Form = () => {
                             
                             :
                             <div>
-                                 <button type='submit' onClick={() => {axios.post('https://feroe.vercel.app/payment', totalPrice).then((res)=> window.location.href = res.data.response.body.init_point) }} className='btnPagar'><h4>COMPRAAAR</h4></button> 
+                                 <button type='submit' onClick={() => {axios.post('https://feroe.vercel.app/payment', totalPrice).then((res)=> window.location.href = res.data.response.body.init_point) }} className='btnPagar'><h4>COMAR</h4></button> 
                             </div>
 
                         }
