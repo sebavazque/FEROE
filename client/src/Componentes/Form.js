@@ -163,7 +163,12 @@ const Form = () => {
                             
                             :
                             <div>
-                                <button type='submit' onClick={handleConfirm} className='btnPagar'><h4>COMPRAAAR</h4></button>
+                                {/* <button type='submit' onClick={handleConfirm} className='btnPagar'><h4>COMPRAAAR</h4></button> */}
+                                <form action="https://feroe.vercel.app/payment" method='POST'>
+                                    <input type="hidden" name='title' value="FEROE"></input>
+                                    <input type="hidden" name='price' value={totalPrice} ></input>
+                                    <button type='submit' onClick={handleConfirm} className='btnPagar'><h4>COMPRAAAR</h4></button>
+                                </form>
                             </div>
 
                         }
